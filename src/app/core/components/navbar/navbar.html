@@ -1,0 +1,12 @@
+<nav>
+	<ul>
+		@for(item of items; track item.link){
+			<li>
+				<a [routerLink] = item.link routerLinkActive = 'active' [attr.routerLinkActiveOptions] = 'item.opt ? item.opt : null'>
+					{{ item.title }}
+				</a>
+			</li>
+		}
+		@empty {<p>No items found.</p>}
+	</ul>
+</nav>

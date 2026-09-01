@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+button {
+	@apply w-full text-left px-4 py-3 transition-colors duration-150;
+}
+
+.container {
+	@apply bg-white rounded-lg border border-gray-200 shadow-md overflow-hidden;
+}
+
+.pageTitle {
+	@apply bg-gray-50 border-b border-gray-200 px-6 py-4 font-semibold text-gray-800;
+}
+
+.vehicle {
+	@apply divide-y divide-gray-200 rounded-md border border-gray-200 overflow-hidden;
+}
+
+.errorMessage {
+	@apply bg-red-50 text-red-700 border-l-4 border-red-500 px-6 py-3 m-6 text-sm;
+}

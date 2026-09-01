@@ -1,0 +1,20 @@
+<div class = 'container'>
+	<div class = 'max-w-5xl mx-auto'>
+		<h1>{{aboutText()}}</h1>
+		<div class = 'max-w-3xl mx-auto'>
+			<p class = 'text-lg max-sm:px-4'>A curated selection of the best 50 about us pages created by top-class SaaS companies. These designs are very valuable to learn how to present your company, team members, and mission, the right way.</p>
+		</div>
+	</div>
+	<div style = 'border: 2px solid #333; padding: 2rem;'>
+		<h2>Parent Component</h2>
+		<p>Child says: <em><strong>{{childNotification()}}</strong></em></p>
+		<app-aboutChild [myInput] = 'messageToSend()' (myOutput) = 'onChildAction($event)' />
+	</div>
+</div>
+
+<!-- The parent's local signal stays perfectly dual-synced -->
+<app-counter [(counter)] = 'counter' />
+
+
+<app-search />
+<!-- app-search [(searchId)] = 'selectedOption' [options] = 'options()' /-->

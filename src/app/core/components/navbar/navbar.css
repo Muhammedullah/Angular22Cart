@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+:host {/* Apply text styles to the entire component wrapper */
+  @apply block text-xl font-sans antialiased text-slate-800;
+}
+
+nav {
+	@apply flex items-center justify-between p-4 text-gray-700;
+}
+
+ul {
+	@apply flex space-x-4 list-none;
+}
+
+li {
+  @apply rounded hover:font-bold hover:text-black hover:bg-gray-50 transition-colors duration-150;
+}

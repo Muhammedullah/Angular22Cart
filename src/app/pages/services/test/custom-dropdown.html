@@ -1,0 +1,4 @@
+<select id = 'custom-select' [(ngModel)] = 'customSelectedId'>
+  <option [value] = 'null' disabled selected>-- Select a Label --</option>
+  @for(option of options(); track option.id){<option [value] = 'option.id'>{{ option.name }}</option>}
+</select>

@@ -1,0 +1,3 @@
+@if(cartItems().length){
+	@for(cartItem of cartItems(); track cartItem){<app-cart-item [cartItem] = 'cartItem' />}
+}

@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+footer {
+	@apply bg-slate-900 text-slate-400 border-t border-slate-800;
+}
+
+ul {
+	@apply list-none;
+}
+
+li {
+	@apply inline-block mr-4;
+}
+
+.bottom {
+	@apply grid grid-cols-3 justify-between;
+}
+
+.left {
+	@apply text-left;
+}
+
+.center {
+	@apply text-center;
+}
+
+.right {
+	@apply text-right;
+}

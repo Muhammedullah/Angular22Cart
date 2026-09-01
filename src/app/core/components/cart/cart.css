@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+.container {
+	@apply py-8 max-w-6xl mx-auto;
+}
+
+.title {
+	@apply text-3xl font-bold text-slate-900 mb-8;
+}
+
+.cart {
+	@apply grid grid-cols-2 gap-24;
+}
+
+.empty {
+	@apply flex flex-col items-center justify-center h-64 bg-white rounded-xl shadow-md;
+}
+
+.empty_cart {
+	@apply size-16 text-slate-300 mb-4;
+}
+
+.empty_text {
+	@apply text-xl font-medium text-slate-500 mb-2;
+}
+
+.empty_info {
+	@apply text-slate-400 mb-6;
+}
+
+.shopping {
+	@apply flex items-center justify-center w-1/6 h-12 rounded-lg bg-slate-800 text-white hover:font-bold hover:text-green-600;
+}

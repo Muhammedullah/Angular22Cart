@@ -1,0 +1,34 @@
+<!-- Switch between paths using modern Angular @switch control flow -->
+@switch(name()){
+	@case('home'){
+		<svg:path d = 'M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' />
+	}
+	@case('minus'){
+		<svg:path d = 'M5 11h14v2H5z' />
+	}
+	@case('plus'){
+		<svg:path d = 'M11 5v6H5v2h6v6h2v-6h6v-2h-6V5z' />
+	}
+	@case('settings'){
+		<svg:path d = 'M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.3-.06.63-.06.94s.02.64.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z' />
+	}
+	@case('star'){
+		<svg:path d = 'M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z' fill-rule = 'evenodd' clip-rule = 'evenodd' />
+	}
+	@case('trash'){
+		<svg:path d = 'M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+		<svg:line x1 = '80' y1 = '112' x2 = '432' y2 = '112' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/>
+		<svg:path d = 'M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+		<svg:line x1 = '256' y1 = '176' x2 = '256' y2 = '400' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+		<svg:line x1 = '184' y1 = '176' x2 = '192' y2 = '400' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+		<svg:line x1 = '328' y1 = '176' x2 = '320' y2 = '400' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+	}
+}
+					<!--svg xmlns = 'http://www.w3.org/2000/svg' viewBox = '0 0 512 512' class = 'w-6 h-6 fill-current text-red-50 hover:text-red-400'>
+						<path d = 'M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+						<line x1 = '80' y1 = '112' x2 = '432' y2 = '112' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/>
+						<path d = 'M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+						<line x1 = '256' y1 = '176' x2 = '256' y2 = '400' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+						<line x1 = '184' y1 = '176' x2 = '192' y2 = '400' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+						<line x1 = '328' y1 = '176' x2 = '320' y2 = '400' style = 'stroke:#C3BFC1;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
+					</svg-->

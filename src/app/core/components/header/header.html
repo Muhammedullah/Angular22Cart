@@ -1,0 +1,13 @@
+<header>
+	<div class = 'navBar'>
+		<a routerLink = '/' class = 'logo'><img src = 'images/logo.jpg' alt = {{altText()}}></a>
+		<app-navbar />
+		<span><button class = 'menu-toggle' id = 'mobile-menu-btn' aria-label = 'Toggle Menu'>☰</button></span>
+		<span>
+			<a routerLink = 'cart' routerLinkActive = 'active' [routerLinkActiveOptions] = '{ exact : true}'>
+				<span class = 'cartIcon'>🛒</span>
+				@if(cartCount()){<span class = 'cartCount'>{{cartCount()}}</span>}
+			</a>
+		</span>
+	</div>
+</header>

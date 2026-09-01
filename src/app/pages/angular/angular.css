@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+:host {
+  @apply box-border block h-[100dvh];
+  --bright-blue: oklch(51.01% 0.274 263.83);
+  --electric-violet: oklch(53.18% 0.28 296.97);
+  --french-violet: oklch(47.66% 0.246 305.88);
+  --vivid-pink: oklch(69.02% 0.277 332.77);
+  --hot-red: oklch(61.42% 0.238 15.34);
+  --orange-red: oklch(63.32% 0.24 31.68);
+  --gray-900: oklch(19.37% 0.006 300.98);
+  --gray-700: oklch(36.98% 0.014 302.71);
+  --gray-400: oklch(70.9% 0.015 304.04);
+  --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+    180deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+  --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+    90deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+  --pill-accent: var(--bright-blue);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  @apply text-[3.125rem] text-[color:var(--gray-900)] font-medium leading-[100%] tracking-[-0.125rem] m-0;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+p {
+  @apply text-[color:var(--gray-700)] m-0;
+}
+main {
+  @apply w-full min-h-full flex justify-center items-center relative p-4;
+  box-sizing: inherit;
+}
+.angular-logo {
+  @apply max-w-[9.2rem];
+}
+.content {
+  @apply flex justify-around w-full max-w-[700px] mb-12;
+}
+.content h1 {
+  @apply mt-7;
+}
+.content p {
+  @apply mt-6;
+}
+.divider {
+  @apply w-px;
+  background: var(--red-to-pink-to-purple-vertical-gradient);
+  margin-inline: 0.5rem;
+}
+.pill-group {
+  @apply flex flex-col flex-wrap gap-5;
+  align-items: start;
+}
+.pill {
+  @apply flex items-center text-[color:var(--pill-accent)] transition-[background] duration-[0.3s] ease-[ease] text-sm not-italic font-medium leading-[1.4rem] tracking-[-0.00875rem] no-underline whitespace-nowrap rounded-[2.75rem] border-0;
+  --pill-accent: var(--bright-blue);
+  background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+  padding-inline: 0.75rem;
+  padding-block: 0.375rem;
+  font-family: var(--inter-font);
+}
+.pill:hover {
+  background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+}
+.pill-group .pill:nth-child(6n + 1) {
+  --pill-accent: var(--bright-blue);
+}
+.pill-group .pill:nth-child(6n + 2) {
+  --pill-accent: var(--electric-violet);
+}
+.pill-group .pill:nth-child(6n + 3) {
+  --pill-accent: var(--french-violet);
+}
+.pill-group .pill:nth-child(6n + 4),
+.pill-group .pill:nth-child(6n + 5),
+.pill-group .pill:nth-child(6n + 6) {
+  --pill-accent: var(--hot-red);
+}
+.pill-group svg {
+  margin-inline-start: 0.25rem;
+}
+.social-links {
+  @apply flex items-center gap-[0.73rem] mt-6;
+}
+.social-links path {
+  @apply transition-[fill] duration-[0.3s] ease-[ease] fill-[var(--gray-400)];
+}
+.social-links a:hover svg path {
+  @apply fill-[var(--gray-900)];
+}
+@media screen and (max-width: 650px) {
+  .content {
+    @apply flex-col w-max;
+  }
+  .divider {
+    @apply h-px w-full;
+    background: var(--red-to-pink-to-purple-horizontal-gradient);
+    margin-block: 1.5rem;
+  }
+}

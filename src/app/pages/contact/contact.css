@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-outfit: 'Outfit', sans-serif;
+}
+
+.container {
+	@apply text-center max-w-5xl mx-auto;
+}
+
+.title {
+	@apply font-outfit font-bold text-3xl md:text-2xl mb-4;
+}
+
+.address {
+	@apply max-w-2xl mx-auto;
+}

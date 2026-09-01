@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+main {
+	@apply flex-1 overflow-y-auto p-6;
+}
+
+.container {
+	@apply flex flex-col h-screen overflow-hidden bg-slate-50;
+}

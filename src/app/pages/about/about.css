@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.container {
+	@apply bg-white rounded-lg shadow-md overflow-hidden border border-gray-200;
+}
+
+h1 {
+	@apply font-bold text-5xl md:text-6xl text-zinc-800 dark:text-zinc-100 tracking-[-.008em] mb-4;
+}

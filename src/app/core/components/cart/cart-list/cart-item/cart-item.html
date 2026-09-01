@@ -1,0 +1,24 @@
+@if(cartItem()){
+	<div class = 'container'>
+		<div class = 'content'>
+			<img class = 'image' [src] = 'cartItem().image' [alt] = 'cartItem().title' />
+			<div class = 'item-info'>
+				<h3 class = 'title'>{{ cartItem().title }}</h3>
+				<p class = 'category'>{{ cartItem().category }}</p>
+				<p class = 'price'>{{ cartItem().price | currency }}</p>
+			</div>
+			<div class = 'modify'>
+				<button	type = 'button'	(click) = 'onRemove()'><img src = 'images/trash.svg' class = 'trash' /></button>
+				<div class = 'quantityChange'>
+					<button	type = 'button'	class = 'change' (click) = 'decrease(cartItem().quantity)'>
+						<img src = 'images/minus.svg' />
+					</button>
+					<span class = 'quantity'>{{ cartItem().quantity }}</span>
+					<button	type = 'button'	class = 'change' (click) = 'increase(cartItem().quantity)'>
+						<img src = 'images/plus.svg' />
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+}

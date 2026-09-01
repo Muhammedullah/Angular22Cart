@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+:host {
+	@apply block py-4;
+}
+
+.container {
+	@apply flex items-center justify-between mb-8;
+}
+
+.productTitle {
+	@apply text-3xl font-bold text-slate-900 mb-8;
+}

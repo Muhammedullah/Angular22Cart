@@ -1,0 +1,9 @@
+@if(products.isLoading()){<div class = 'loading'>Loading products...</div>}
+@else if(products.error()){<p>Error loading data: {{products.error()}}.</p>}
+@else {
+	<div class = 'productsList'>
+		@for(product of products.value(); track product.id){
+			<app-product-card [product] = 'product' (addToCart) = 'onAddToCart($event)' />
+		}
+	</div>
+}

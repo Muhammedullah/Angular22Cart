@@ -1,0 +1,34 @@
+@if(cartCount()){
+	<div class = 'container'>
+		<div class = 'content'>
+			<div class = 'cartTotal'>
+				<h2 class = 'header'>Order Summary</h2>
+				<dl class = 'space-y-3'>
+					<div class = 'flex justify-between'>
+						<dt class = 'text-slate-500'>Subtotal ({{cartCount()}} items):</dt>
+						<dd class = 'font-medium text-gray-900'>{{cartTotal() | currency}}</dd>
+					</div>
+					<div class = 'flex justify-between'>
+						<dt class = 'text-slate-500'>Shipping:</dt>
+						<dd class = 'font-medium'>
+							@if(shipmentFee()){<span class = 'text-gray-600'>{{shipmentFee() | currency}}</span>}
+							@else {<span class = 'text-green-600'>Free</span>}
+						</dd>
+					</div>
+					<div class = 'flex justify-between'>
+						<dt class = 'text-slate-500'>Estimated Tax:</dt>
+						<dd class = 'font-medium text-gray-900'>{{tax() | currency}}</dd>
+					</div>
+					<div class = 'total'>
+						<dt class = 'font-semibold'>Total:</dt>
+						<dd class = 'font-bold text-slate-900'>{{totalPrice() | currency}}</dd>
+					</div>
+				</dl>
+				<div class = 'flex justify-center'>
+					<button class = 'checkout'>Proceed to Checkout</button>
+				</div>
+				<button	class = 'clearCart'	(click) = 'onClearCart()'>Clear Cart</button>
+			</div>
+		</div>
+	</div>
+}

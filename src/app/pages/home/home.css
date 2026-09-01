@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+img {
+	@apply max-h-[300px] object-contain mt-6;
+}
+
+span {
+	@apply font-bold text-lg mt-1;
+}
+
+.container {
+	@apply bg-white border border-gray-200 rounded-lg shadow-sm;
+}
+
+.content {
+	@apply w-full px-4 mx-auto;
+}
+
+.pageTitle {
+	@apply px-6 py-4 bg-gray-50 border-b border-gray-200 font-semibold text-gray-800;
+}
+
+.credits {
+	@apply flex w-full flex-col items-end justify-end bg-white mx-auto;
+}
+
+.creditDetails {
+	@apply max-w-sm bg-white p-4 text-center;
+}

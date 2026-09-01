@@ -1,0 +1,29 @@
+<!--div class = 'container'>
+	<h1 class = 'productTitle'>Products</h1>
+	<select [(ngModel)] = 'selectedCategory'>
+		<option value = ''>All Categories</option>
+		<option value = 'electronics'>Electronics</option>
+		<option value = 'apparel'>Apparel</option>
+	</select>
+	<input type = 'number' [(ngModel)] = 'itemLimit' min = '1' max = '50' />
+	<input type = 'text' placeholder = 'Search products...' [value] = 'searchQuery()' #i (input) = 'updateQuery(i.value)' />
+</div-->
+
+<div class = 'dropdown-container'>
+  <label for = 'custom-select'>Choose an option:</label>
+  <select id = 'custom-select' [(ngModel)] = 'selectedId' (ngModelChange) = 'onSelectionChange($event)'>
+    <option [value] = 'null' disabled selected>-- Select a Label --</option>
+    @for(option of options(); track option.id){<option [value] = 'option.id'>{{ option.name }}</option>}
+  </select>
+  <!-- Conditional feedback UI using @if -->
+  @if(selectedItem()){
+    <div class = 'selection-feedback'>
+      <p>Active Selection: <strong>{{ selectedItem()?.name }}</strong> (ID: {{ selectedId() }})</p>
+    </div>
+  }
+</div>
+<app-custom-dropdown [(customSelectedId)] = 'selectedId' [options] = 'options()' />
+<!--select id = 'custom-select' [(ngModel)] = 'customSelectedId'>
+  <option [value] = 'null' disabled selected>-- Select a Label --</option>
+  @for(option of options(); track option.id){<option [value] = 'option.id'>{{ option.name }}</option>}
+</select-->

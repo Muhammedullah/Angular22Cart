@@ -1,0 +1,17 @@
+<div class = 'container'>
+	<h1 class = 'title'>{{title}}</h1>
+	@if(cartItems().length){
+		<div class = 'cart'>
+			<app-cart-list />
+			<app-cart-total />
+		</div>
+	}
+	@else{
+		<div class = 'empty'>
+			<img src = 'images/empty_cart.png' class = 'empty_cart' />
+			<p class = 'empty_text'>Your cart is empty</p>
+			<p class = 'empty_info'>Looks like you haven't added anything yet.</p>
+			<a class = 'shopping' routerLink = '/products'>Continue Shopping</a>
+		</div>
+	}
+</div>

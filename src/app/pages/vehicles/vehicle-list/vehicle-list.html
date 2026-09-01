@@ -1,0 +1,17 @@
+<div class = 'container'>
+  <div class = 'pageTitle'>{{pageTitle}}</div>
+	@if(vehicles().length){
+		<div class = 'p-6'>
+			<div class = 'vehicle'>
+				@for(vehicle of vehicles(); track vehicle.name){
+					<button type = 'button'
+					[ngClass] = "{'bg-blue-600 text-white': vehicle?.name === selectedVehicle()?.name, 'text-gray-700 hover:bg-gray-100': vehicle?.name !== selectedVehicle()?.name}"
+					(click) = 'onSelected(vehicle.name)'>
+						{{vehicle.name}}
+					</button>
+				}
+			</div>
+		</div>
+	}
+  @if(errorMessage){<div class = 'errorMessage' role = 'alert'>{{errorMessage}}</div>}
+</div>
