@@ -1,6 +1,7 @@
-<svg xmlns = 'http://www.w3.org/2000/svg' viewBox = '0 0 512 512' width = '24' height = '24'>
+<svg xmlns = 'http://www.w3.org/2000/svg' width = '512' height = '512'>
 	<style>
 		path, line {
+			viewBox: 0 0 512 512;
 			fill: #FFCCCC;
 			stroke: #F5300A;
 			stroke-width: 32px;
