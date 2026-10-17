@@ -1,0 +1,1 @@
+import {Y as Yv,s as sc,d as dI,f as ac}from'./main-IJOUTOYT.js';var t=class r{static \u0275fac=function(e){return new(e||r)};static \u0275cmp=Yv({type:r,selectors:[["app-refresh"]],decls:2,vars:0,template:function(e,i){e&1&&(sc(0,"p"),dI(1,"refresh works!"),ac());},encapsulation:2})};export{t as default};
