@@ -1,0 +1,1 @@
+var o=[{path:"angular",loadComponent:()=>import('./chunk-Dl6V1oz5.js'),title:"Angular"}],t=o;export{t as default};
