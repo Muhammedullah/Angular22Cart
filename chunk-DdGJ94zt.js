@@ -1,0 +1,1 @@
+var o=[{path:"products",loadComponent:()=>import('./chunk-BtEzVVAn.js'),title:"Products"}],t=o;export{t as default};
