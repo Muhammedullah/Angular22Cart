@@ -1,0 +1,1 @@
+import {O as Ov,_ as tc,Z as ZE,a0 as nc}from'./main-BHEKX76R.js';var t=class r{static \u0275fac=function(e){return new(e||r)};static \u0275cmp=Ov({type:r,selectors:[["app-refresh"]],decls:2,vars:0,template:function(e,i){e&1&&(tc(0,"p"),ZE(1,"refresh works!"),nc());},encapsulation:2})};export{t as default};
