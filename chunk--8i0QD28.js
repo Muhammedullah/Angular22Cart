@@ -1,0 +1,1 @@
+var t=[{path:"login",loadComponent:()=>import('./chunk-DlVVa-wY.js'),title:"Login"},{path:"logout",loadComponent:()=>import('./chunk-Bwu5rNKe.js'),title:"Logout"},{path:"register",loadComponent:()=>import('./chunk-C_ej4bAZ.js'),title:"Register"},{path:"refresh",loadComponent:()=>import('./chunk-BdcUAaF4.js'),title:"Refresh"}],o=t;export{o as default};
