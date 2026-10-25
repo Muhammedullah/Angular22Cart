@@ -1,1 +1,0 @@
-var o=[{path:"products",loadComponent:()=>import('./chunk-iTDgst33.js'),title:"Products"}],t=o;export{t as default};
