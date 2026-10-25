@@ -1,0 +1,1 @@
+var t=[{path:"about",loadComponent:()=>import('./chunk-BhMnwUNO.js'),title:"About"},{path:"services",loadComponent:()=>import('./chunk-Z_GJIqTd.js'),title:"Services"},{path:"contact",loadComponent:()=>import('./chunk-Cjqfesey.js'),title:"Contact"},{path:"cart",loadComponent:()=>import('./chunk-BLkrtReJ.js'),title:"Cart"}],o=t;export{o as default};
